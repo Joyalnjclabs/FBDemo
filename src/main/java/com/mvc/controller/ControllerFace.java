@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import com.mvc.dao.PersonDao;
 import com.mvc.entity.Person;
 import com.mvc.services.PersonService;
-
+//Starting of login page
 @Controller
 public class ControllerFace {
 	@RequestMapping("/register")
@@ -17,6 +17,7 @@ public String register()
 {
 	return "rpage";
 }
+	//Logic to save data to database
 	@RequestMapping(path = "/savedata",method = RequestMethod.POST)
 public String saveData(@ModelAttribute Person person ,Model model)
 {
